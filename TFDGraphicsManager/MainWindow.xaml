@@ -1,0 +1,119 @@
+﻿<Window x:Class="TFDGraphicsManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TFDGraphicsManager"
+        mc:Ignorable="d"
+        Title="TFD Graphics Settings Manager" Height="450" Width="800">
+
+    <!-- Setting the background of the Window -->
+    <Window.Background>
+        <ImageBrush ImageSource="pack://application:,,,/Resources/Images/Background.bmp" Stretch="UniformToFill" />
+    </Window.Background>
+
+    <Grid>
+        <!-- Define two columns: one for labels, one for ComboBoxes -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" /> <!-- Column for Labels -->
+            <ColumnDefinition Width="200" />    <!-- Column for ComboBoxes -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Define rows for each ComboBox -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Add Label and ComboBox for View Distance -->
+        <Label Content="View Distance:" Grid.Row="0" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="ViewDistance" Grid.Row="0" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Anti-Aliasing -->
+        <Label Content="Anti-Aliasing:" Grid.Row="1" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="AntiAliasing" Grid.Row="1" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Post Processing -->
+        <Label Content="Post Processing:" Grid.Row="2" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="PostProcessing" Grid.Row="2" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Shadows -->
+        <Label Content="Shadows:" Grid.Row="3" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Shadows" Grid.Row="3" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Global Illumination -->
+        <Label Content="Global Illumination:" Grid.Row="4" Grid.Column="0" Width="150" Foreground="White"
+               FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="GlobalIllumination" Grid.Row="4" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Reflections -->
+        <Label Content="Reflections:" Grid.Row="5" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Reflections" Grid.Row="5" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Textures -->
+        <Label Content="Textures:" Grid.Row="6" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Textures" Grid.Row="6" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Effects -->
+        <Label Content="Effects:" Grid.Row="7" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Effects" Grid.Row="7" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Foliage -->
+        <Label Content="Foliage:" Grid.Row="8" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Foliage" Grid.Row="8" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Shading -->
+        <Label Content="Shading:" Grid.Row="9" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Shading" Grid.Row="9" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Mesh -->
+        <Label Content="Mesh:" Grid.Row="10" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Mesh" Grid.Row="10" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Physics -->
+        <Label Content="Physics:" Grid.Row="11" Grid.Column="0" Width="150" Foreground="White" FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="Physics" Grid.Row="11" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <!-- Add Label and ComboBox for Ray Tracing Quality -->
+        <Label Content="Ray Tracing Quality:" Grid.Row="12" Grid.Column="0" Width="150" Foreground="White"
+               FontWeight="Bold"
+               HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <ComboBox x:Name="RayTracingQuality" Grid.Row="12" Grid.Column="1" Width="200" Height="30"
+                  HorizontalAlignment="Center" VerticalAlignment="Top" />
+    </Grid>
+</Window>
